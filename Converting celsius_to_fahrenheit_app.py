@@ -60,13 +60,13 @@ st.title('Converting Celsius to Fahrenheit Web App')
 
 Celsius = st.number_input('Temperature in Celsius')
 
-Celsius  = np.array(Celsius)
+#Celsius  = np.array(Celsius)
 
 st.table(Celsius)
 
 
 if st.button('Predict'):
-    prediction = np.round(model2.predict(Celsius), 0)
+    prediction = np.round(model2.predict([Celsius]), 0)
     
     st.write('Predicted Credit Score = ', prediction[0][0])
 
