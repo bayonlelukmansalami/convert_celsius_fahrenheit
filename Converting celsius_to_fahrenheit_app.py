@@ -60,7 +60,7 @@ st.title('Converting Celsius to Fahrenheit Web App')
 
 Celsius = st.number_input('Temperature in Celsius')
 
-Celsius  = np.array([Celsius])
+Celsius  = np.array(Celsius)
 
 st.table(Celsius)
 
