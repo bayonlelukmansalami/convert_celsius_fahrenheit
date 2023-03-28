@@ -68,7 +68,7 @@ st.table(Celsius)
 if st.button('Predict'):
     prediction = np.round(model2.predict(Celsius), 0)
     
-    st.write('Predicted Credit Score = ', prediction)
+    st.write('Predicted Credit Score = ', prediction[0][0])
 
 
 
